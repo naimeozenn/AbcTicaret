@@ -1,0 +1,28 @@
+﻿@using Abc.MvcWebUI.Models
+@model IEnumerable<ProductModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="jumbotron">
+    <div class="container">
+
+        <h1 class="display-4">HOŞGELNİZ..</h1>
+        <p class="lead">Güven içinde alışveriş yapabileceginiz tek adres</p>
+        <hr class="my-4">
+        <p>Sınırsız alışveriş fırsatlarını kaçırmayın</p>
+       
+    </div>
+
+</div>
+
+
+<div class="container pb-5">
+    @Html.Partial("_ProductList", Model)
+
+</div>
+
+
+
+
+
